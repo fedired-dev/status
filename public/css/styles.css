@@ -1,0 +1,143 @@
+:root {
+    --color-primary: #2c3e50;
+    --color-background: #f4f4f4;
+    --color-text: #333;
+    --color-up: #2ecc71;
+    --color-down: #e74c3c;
+    --color-loading: #f39c12;
+}
+
+[data-theme="dark"] {
+    --color-primary: #34495e;
+    --color-background: #2c3e50;
+    --color-text: #ecf0f1;
+    --color-up: #27ae60;
+    --color-down: #c0392b;
+    --color-loading: #f39c12;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--color-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+}
+
+.status-up { color: var(--color-up); }
+.status-down { color: var(--color-down); }
+.status-loading { color: var(--color-loading); }
+
+.ssl-secure { color: var(--color-up); }
+.ssl-insecure { color: var(--color-down); }
+
+#lastUpdate {
+    text-align: right;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #24292e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #0366d6;
+}
+
+#darkModeToggle, #searchInput {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+#darkModeToggle {
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+#searchInput {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    table, tr, td {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+}

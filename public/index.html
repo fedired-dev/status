@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Estado de Servicios Fedired</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Estado de Servicios de Fedired</h1>
+        </header>
+        
+        <button id="darkModeToggle">Cambiar modo oscuro</button>
+        <input type="text" id="searchInput" placeholder="Buscar servicios...">
+        
+        <table id="serviceTable">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Estado</th>
+                    <th>SSL</th>
+                    <th>Velocidad de carga</th>
+                    <th>Última Verificación</th>
+                </tr>
+            </thead>
+            <tbody id="serviceTableBody"></tbody>
+        </table>
+        
+        <div id="lastUpdate"></div>
+        
+        <div style="text-align: center;">
+            <a href="https://github.com/fedired-dev/status" target="_blank" class="github-button">
+                Ir al repositorio de GitHub
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fedired - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
