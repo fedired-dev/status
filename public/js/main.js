@@ -8,14 +8,11 @@ async function updateTable() {
 
         services.forEach(service => {
             const row = document.createElement('tr');
-            row.setAttribute('data-service', service.name);
-            const statusClass = service.status === 'ACTIVO' ? 'status-up' : 'status-down';
-            const sslClass = service.ssl === 'Seguro' ? 'ssl-secure' : 'ssl-insecure';
-
+         
             row.innerHTML = `
                 <td data-label="Servicio">${service.name}</td>
-                <td data-label="Estado" class="${statusClass}">${service.status}</td>
-                <td data-label="SSL" class="${sslClass}">${service.ssl}</td>
+                <td data-label="Estado">${service.status}</td>
+                <td data-label="SSL">${service.ssl}</td>
                 <td data-label="Velocidad de carga">${service.loadTime}</td>
                 <td data-label="Última Verificación">${service.lastChecked}</td>
             `;
