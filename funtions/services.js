@@ -36,4 +36,8 @@ async function checkServices() {
   return results;
 }
 
+exports.handler = async function(event, context) {
+  // ... tu código aquí ...
+};
+
 module.exports = { checkServices };
