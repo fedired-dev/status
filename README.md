@@ -60,7 +60,7 @@ Este proyecto está configurado para ser desplegado en Netlify. Para desplegar:
 3. Sigue las instrucciones en la terminal para completar el despliegue.
 
 ## Estructura del Proyecto
-
+ ```
 proyecto/
 ├── functions/
 │ └── services.js # Función serverless para verificar servicios
@@ -72,7 +72,7 @@ proyecto/
 │ └── index.html # Página principal
 ├── netlify.toml # Configuración de Netlify
 └── package.json # Dependencias y scripts
-
+ ```
 ## Contribuir
 
 Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir qué te gustaría cambiar.
