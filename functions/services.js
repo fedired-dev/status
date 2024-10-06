@@ -3,9 +3,8 @@ const axios = require('axios');
 const services = [
   { name: 'Fedired', url: 'https://fedired.com' },
   { name: 'Documentación Fedired', url: 'https://docs.fedired.com' },
-  { name: 'Estado Fedired', url: 'https://status.fedired.com' },
-  { name: 'API de Mastodon', url: 'https://mastodon.example/api/v1/instance' },
-  { name: 'API del Fediverso', url: 'https://fediverso.example/api/v1/instance' }
+  { name: 'Estado de los Servidores', url: 'https://status.fedired.com' },
+  { name: 'Licencia FPL (Fedired)', url: 'https://licence.fedired.com' },
 ];
 
 async function checkServices() {
