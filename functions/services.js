@@ -4,7 +4,7 @@ const services = [
   { name: 'Fedired', url: 'https://fedired.com' },
   { name: 'Documentación Fedired', url: 'https://docs.fedired.com' },
   { name: 'Estado de los Servidores', url: 'https://status.fedired.com' },
-  { name: 'Licencia FPL (Fedired)', url: 'https://licence.fedired.com' },
+  { name: 'Licencia FPL (Fedired)', url: 'https://license.fedired.com' },
 ];
 
 async function checkServices() {
